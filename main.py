@@ -17,4 +17,4 @@ def register():
         return redirect(url_for('register'))
     return render_template('register.html')
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=False)
