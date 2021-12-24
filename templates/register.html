@@ -7,13 +7,18 @@
     <div class="row justify-content-center">
         <div class="col-12 col-sm-6 col-md-3">
             <div class="shadow-lg p-3 mb-5 bg-body rounded form-container">
+                <div class="container">
+                    {% if register == true %}
+                    <h2 style="color: red;">Registered Succefully</h2>
+                    {% endif %}
+                </div>
                 <form method="post" action="/register">
                     <div class="mb-3 ">
-                        <label for="exampleInputEmail1 " class="form-label ">Minecraft Ingame Username</label>
+                        <label for="exampleInputEmail1 " class="form-label ">Minecraft In game Username</label>
                         <input type="email " name="username" class="form-control " id="exampleInputEmail1 " aria-describedby="emailHelp " required>
                     </div>
                     <div class="mb-3 ">
-                        <label for="exampleInputPassword1 " class="form-label ">Minecraft Ingame Password</label>
+                        <label for="exampleInputPassword1 " class="form-label ">Minecraft In game Password</label>
                         <input type="password" name="password" class="form-control " id="exampleInputPassword1 " required>
                     </div>
                     <div class="d-grid gap-2 col-6 mx-auto">
